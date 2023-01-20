@@ -1,0 +1,10 @@
+.cat-container {
+  margin: 10px;
+}
+
+.cat-container div {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  align-items: center;
+}
