@@ -1,0 +1,38 @@
+.books-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.book-info {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid gray;
+  padding: 15px;
+}
+
+.book-info:nth-child(even) {
+  background-color: rgb(165, 181, 181);
+}
+
+.description {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.description h2 p {
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
+  display: flex;
+  gap: 20px;
+}
