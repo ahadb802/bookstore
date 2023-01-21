@@ -103,14 +103,14 @@ $ node --version && npm --version
 ```
 ### Setup
 
-Clone the repository using [this link](https://github.com/ahadb802/first-react-app-magic-calculator.git)
+Clone the repository using [this link](https://github.com/ahadb802/bookstore.git)
 
 ### Install
 
 In the terminal, go to your file directory and run this command.
 
 ```
-$ git clone https://github.com/ahadb802/first-react-app-magic-calculator.git
+$ git clone https://github.com/ahadb802/bookstore.git
 ```
 
 ### Usage
