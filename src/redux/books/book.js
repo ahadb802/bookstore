@@ -2,7 +2,7 @@ const ADD_A_BOOK = 'ADD_A_BOOK';
 const REMOVE_A_BOOK = 'REMOVE_A_BOOK';
 const LIST_BOOKS = 'LIST_BOOKS';
 
-const initialState = {books:[]};
+const initialState = { books: [] };
 
 const booksReducer = (state = initialState, action) => {
   switch (action.type) {

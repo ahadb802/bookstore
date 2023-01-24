@@ -1,6 +1,6 @@
 const CHECK_STATUS = 'CHECK_STATUS';
 
-const initialState = {categories:[]};
+const initialState = { categories: [] };
 
 const categoriesReducer = (state = initialState, action) => {
   switch (action.type) {
@@ -12,9 +12,9 @@ const categoriesReducer = (state = initialState, action) => {
 };
 
 export const checkStatus = () => async (dispatch) => {
-    dispatch({
-      type: CHECK_STATUS,
-    });
-  };
+  dispatch({
+    type: CHECK_STATUS,
+  });
+};
 
 export default categoriesReducer;
