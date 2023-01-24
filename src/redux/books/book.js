@@ -1,6 +1,6 @@
-const ADD_A_BOOK = 'ADD_A_BOOK';
-const REMOVE_A_BOOK = 'REMOVE_A_BOOK';
-const LIST_BOOKS = 'LIST_BOOKS';
+const ADD_A_BOOK = 'bookStore/books/ADD_A_BOOK';
+const REMOVE_A_BOOK = 'bookStore/books/REMOVE_A_BOOK';
+const LIST_BOOKS = 'bookStore/books/LIST_BOOKS';
 
 const initialState = { books: [] };
 
