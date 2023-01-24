@@ -1,6 +1,6 @@
 const CHECK_STATUS = 'CHECK_STATUS';
 
-const initialState = { categories: [] };
+const initialState = [];
 
 const categoriesReducer = (state = initialState, action) => {
   switch (action.type) {

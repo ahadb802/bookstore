@@ -13,7 +13,7 @@ const booksReducer = (state = initialState, action) => {
     case REMOVE_A_BOOK:
       return state.filter((book) => book.id !== action.book);
     case LIST_BOOKS:
-      return action.book;
+      return state;
     default:
       return state;
   }
@@ -33,10 +33,9 @@ export const removeBook = (book) => async (dispatch) => {
   });
 };
 
-export const listBooks = (book) => async (dispatch) => {
+export const listBooks = () => async (dispatch) => {
   dispatch({
     type: LIST_BOOKS,
-    book,
   });
 };
 
