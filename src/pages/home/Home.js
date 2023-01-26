@@ -12,20 +12,20 @@ const Home = () => {
     send(listBooks());
   }, [send]);
 
-  let display = '';
-  display = booksList.map((item) => (
-    <Books
-      id={item.id}
-      key={item.id}
-      book={item}
-      title={item.title}
-      author={item.author}
-      category={item.category}
-    />
-  ));
   return (
     <section>
-      {display}
+      <div className="books-section">
+        {booksList.map((item) => (
+          <Books
+            id={item.id}
+            key={item.id}
+            book={item}
+            title={item.title}
+            author={item.author}
+            category={item.category}
+          />
+        ))}
+      </div>
       <Add />
     </section>
 
