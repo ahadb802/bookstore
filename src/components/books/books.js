@@ -13,24 +13,22 @@ const Books = ({
   };
 
   return (
-    <div className="books-section">
-      <div className="book-info">
-        <div className="description">
-          <h2>{title}</h2>
-          <h4>{author}</h4>
-          <h5>{category}</h5>
-        </div>
-        <div className="btn">
-          <button type="button">
-            Comments
-          </button>
-          <button type="button" onClick={remove}>
-            Remove
-          </button>
-          <button type="button">
-            Edit
-          </button>
-        </div>
+    <div className="book-info">
+      <div className="description">
+        <h2>{title}</h2>
+        <h4>{author}</h4>
+        <h5>{category}</h5>
+      </div>
+      <div className="btn">
+        <button type="button">
+          Comments
+        </button>
+        <button type="button" onClick={remove}>
+          Remove
+        </button>
+        <button type="button">
+          Edit
+        </button>
       </div>
     </div>
   );
