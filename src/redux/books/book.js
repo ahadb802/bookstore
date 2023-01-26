@@ -7,16 +7,16 @@ const initialState = [{
 }];
 
 const booksReducer = (state = initialState, action) => {
-  switch (action.type) {
-    case ADD_A_BOOK:
-      return [...state, action.book];
-    case REMOVE_A_BOOK:
-      return state.filter((book) => book.id !== action.book);
-    case LIST_BOOKS:
-      return state;
-    default:
-      return state;
+  if (action.type === ADD_A_BOOK) {
+    return [...state, action.book];
   }
+  if (action.type === REMOVE_A_BOOK) {
+    return state.filter((book) => book.id !== action.book);
+  }
+  if (action.type === LIST_BOOKS) {
+    return state;
+  }
+  return state;
 };
 
 export const addBook = (book) => async (dispatch) => {
