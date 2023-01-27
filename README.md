@@ -62,7 +62,7 @@ After you're finished please remove all the comments and instructions!
 
 ## 🛠 Built With <a name="built-with"></a>
 
-- HTML, CSS, JavaScript, Reactjs
+- HTML, CSS, JavaScript, Reactjs,redux
 
 <!-- Features -->
 
