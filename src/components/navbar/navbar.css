@@ -7,20 +7,17 @@
 }
 
 .nav-bar {
-  display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
 .nav-bar ul {
-  display: flex;
   gap: 65px;
   margin: 0;
 }
 
 .nav-bar ul li {
-  display: flex;
   list-style: none;
   align-items: center;
 }
