@@ -4,16 +4,16 @@ import './navbar.css';
 
 const Navbar = () => (
   <div className="nav-container">
-    <nav className="nav-bar">
+    <nav className="nav-bar flex">
       <div>
-        <ul>
-          <li>
+        <ul className="flex">
+          <li className="flex">
             <h2>Book Store</h2>
           </li>
-          <li>
+          <li className="flex">
             <Link to="/">Home</Link>
           </li>
-          <li>
+          <li className="flex">
             <Link to="/categories">Categories</Link>
           </li>
         </ul>
