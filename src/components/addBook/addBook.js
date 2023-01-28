@@ -25,9 +25,10 @@ const Add = () => {
   };
   return (
     <div className="add-section">
-      <h2>Add New Book</h2>
-      <form action="" onSubmit={formSubmit}>
+      <h2 className="form-title">ADD NEW BOOK</h2>
+      <form action="" onSubmit={formSubmit} className="add-form">
         <input
+          className="input title-input"
           type="text"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
@@ -35,20 +36,20 @@ const Add = () => {
           required
         />
         <input
-          className="author-input"
+          className="input title-input"
           type="text"
           value={author}
           onChange={(e) => setAuthor(e.target.value)}
           placeholder="Enter Author of your Book"
           required
         />
-        <select onChange={(e) => setCategory(e.target.value)}>
+        <select onChange={(e) => setCategory(e.target.value)} className="input category-input">
           <option value="Select">Select</option>
           <option value="java">java</option>
           <option value="C/C++">C/C++</option>
           <option value="WildWorld">WildWorld</option>
         </select>
-        <button type="submit" className="btn-submit">Add Book</button>
+        <button type="submit" className="primary-button-big">Add Book</button>
       </form>
     </div>
   );
