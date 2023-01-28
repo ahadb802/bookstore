@@ -14,21 +14,40 @@ const Books = ({
 
   return (
     <div className="book-info">
-      <div className="description">
-        <h2>{title}</h2>
-        <h4>{author}</h4>
-        <h5>{category}</h5>
-      </div>
-      <div className="btn">
-        <button type="button">
-          Comments
-        </button>
-        <button type="button" onClick={remove}>
-          Remove
-        </button>
-        <button type="button">
-          Edit
-        </button>
+      <div className="content">
+        <div className="description">
+          <h4 className="book-category">{category}</h4>
+          <h2 className="book-title">{title}</h2>
+          <h6 className="book-author">{author}</h6>
+          <div className="btn">
+            <button type="button" className="button">
+              Comments
+            </button>
+            <div className="vertical-divider" />
+            <button type="button" className="button" onClick={remove}>
+              Remove
+            </button>
+            <div className="vertical-divider" />
+            <button type="button" className="button">
+              Edit
+            </button>
+          </div>
+        </div>
+        <div className="progress-container">
+          <div className="circular-progress-container"><div className="circular-progress" /></div>
+          <div className="progress-stat">
+            <p className="percent-complete">64%</p>
+            <p className="completed">Completed</p>
+          </div>
+          <div className="progress-divider" />
+          <div className="current-chapter-container">
+            <div>
+              <p className="current-chapter-label">CURRENT CHAPTER</p>
+              <p className="current-chapter">Chapter 17</p>
+            </div>
+            <div><button className="primary-button" type="button">UPDATE PROGRESS</button></div>
+          </div>
+        </div>
       </div>
     </div>
   );
