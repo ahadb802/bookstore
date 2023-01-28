@@ -24,7 +24,7 @@ After you're finished please remove all the comments and instructions!
 
 <div align="center">
 
-  <img src="download.jpeg" alt="logo" width="140"  height="auto" />
+  <img src="src/download.jpeg" alt="logo" width="140"  height="auto" />
   <br/>
 
   <h3><b>Book Store</b></h3>
