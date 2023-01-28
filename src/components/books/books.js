@@ -14,12 +14,12 @@ const Books = ({
 
   return (
     <div className="book-info">
-      <div className="content">
-        <div className="description">
+      <div className="content flex">
+        <div className="description flex">
           <h4 className="book-category">{category}</h4>
           <h2 className="book-title">{title}</h2>
           <h6 className="book-author">{author}</h6>
-          <div className="btn">
+          <div className="btn flex">
             <button type="button" className="button">
               Comments
             </button>
@@ -33,14 +33,14 @@ const Books = ({
             </button>
           </div>
         </div>
-        <div className="progress-container">
-          <div className="circular-progress-container"><div className="circular-progress" /></div>
+        <div className="progress-container flex">
+          <div className="circular-progress-container flex"><div className="circular-progress" /></div>
           <div className="progress-stat">
             <p className="percent-complete">64%</p>
             <p className="completed">Completed</p>
           </div>
           <div className="progress-divider" />
-          <div className="current-chapter-container">
+          <div className="current-chapter-container flex">
             <div>
               <p className="current-chapter-label">CURRENT CHAPTER</p>
               <p className="current-chapter">Chapter 17</p>

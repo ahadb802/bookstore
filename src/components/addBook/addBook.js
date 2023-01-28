@@ -26,7 +26,7 @@ const Add = () => {
   return (
     <div className="add-section">
       <h2 className="form-title">ADD NEW BOOK</h2>
-      <form action="" onSubmit={formSubmit} className="add-form">
+      <form action="" onSubmit={formSubmit} className="add-form flex">
         <input
           className="input title-input"
           type="text"

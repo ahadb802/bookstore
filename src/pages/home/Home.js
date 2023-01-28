@@ -14,7 +14,7 @@ const Home = () => {
 
   return (
     <section>
-      <div className="books-section">
+      <div className="books-section flex">
         {booksList.map((item) => (
           <Books
             id={item.id}
