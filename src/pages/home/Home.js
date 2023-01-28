@@ -26,6 +26,7 @@ const Home = () => {
           />
         ))}
       </div>
+      <div className="horizontal-divider" />
       <Add />
     </section>
 
